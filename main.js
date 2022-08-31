@@ -11,7 +11,7 @@ function createWindow() {
     height: _height,
     minWidth: 800,
     minHeight: 600,
-    icon: "./assets/img/icon.png",
+    icon: "./assets/img/icon.ico",
     frame: true,
     hasShadow: true,
     webPreferences: {
