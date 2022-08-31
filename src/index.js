@@ -1,5 +1,5 @@
 
-const userData = require('electron').remote.app.getPath('userData')
+const userData = require('@electron/remote').app.getPath('userData')
 
 import Datastore from 'nedb'
 let bookListDb = new Datastore({ filename: `${userData}/dbs/book_lists.db`, autoload: true })
