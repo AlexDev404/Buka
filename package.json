@@ -55,7 +55,7 @@
     "alertify.js": "^1.0.12",
     "nedb": "^1.8.0",
     "node-google-translate-skidz": "^1.1.2",
-    "opencollective-postinstall": "^2.0.2",
+    "opencollective-postinstall": "^2.0.3",
     "request": "^2.81.0",
     "vuex": "^2.3.1"
   },
