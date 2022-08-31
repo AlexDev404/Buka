@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
+const path = require("path");
 const electron = require("electron");
 
 let win;
@@ -37,7 +38,8 @@ function createWindow() {
   win.setMenu(null);
   // win.webContents.openDevTools();
 
-  win.loadURL(`file://${__dirname}/bundle/index.html`);
+  // win.loadURL(`file://${__dirname}/bundle/index.html`);
+  win.loadFile(path.join(__dirname, "/index.html"));
 
   win.on("closed", () => {
     win = null;
