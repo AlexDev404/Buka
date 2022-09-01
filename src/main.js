@@ -36,7 +36,7 @@ function createWindow() {
   require("@electron/remote/main").initialize();
   require("@electron/remote/main").enable(win.webContents);
   win.setMenu(null);
-  // win.webContents.openDevTools();
+  win.webContents.openDevTools();
 
   // win.loadURL(`file://${__dirname}/bundle/index.html`);
   win.loadFile(path.join(__dirname, "/index.html"));
