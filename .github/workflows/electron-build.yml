@@ -8,9 +8,10 @@ on:
 #    branches: [ main ]
 #  pull_request:
 #    branches: [ main ]
-schedule:
+
+ schedule:
     # CRON this build
-    - cron: '40 10 * * 6'
+    - cron: '40 10 1 * *'
 
  workflow_dispatch:
 
