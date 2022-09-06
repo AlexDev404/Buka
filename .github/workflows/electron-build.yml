@@ -37,7 +37,7 @@ jobs:
       env:
         testing: no
     - name: Zip Build
-      run: ls && tar -cvzf build.tar out/
+      run: ls && tar -cvzf build.tar ./out/
     - name: Upload Windows Build Artifact
       uses: actions/upload-artifact@v3.1.0
       with:
