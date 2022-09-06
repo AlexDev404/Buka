@@ -42,7 +42,7 @@
       "packagerConfig": {
         "asar": true,
         "icon": "assets/img/icon.ico",
-        "ignore": ["release-builds", ".github", "src", "locations.json"]
+        "ignore": ["release-builds", ".github", "./src/", "locations.json"]
       },
       "makers": [
         {
