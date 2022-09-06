@@ -13,7 +13,7 @@
     "package-x64": "electron-packager . --overwrite --platform=linux --arch=x64  --icon=assets/img/icon.png --prune=true --out=release-builds",
     "package-mac-x64": "electron-packager . --overwrite --platform=mas --arch=x64  --icon=assets/img/icons/icon256x256.icns --prune=true --out=release-builds",
     "package-win-x86": "electron-packager . --overwrite --platform=win32 --arch=ia32  --icon=assets/img/icon.png --prune=true --out=release-builds",
-    "package-win-x64": "npm run build && electron-forge package",
+    "package-win-x64": "npm run build && electron-forge package  --platform=win32 --arch=x64 --asar=true",
     "installer-x86": "electron-installer-debian --src release-builds/Buka-linux-ia32/ --arch i386 --dest dest/installers/ --icon assets/img/icon.png",
     "installer-x64": "electron-installer-debian --src release-builds/Buka-linux-x64/ --arch x64 --dest dest/installers/ --icon assets/img/icon.png",
     "installer-win-x86": "electron-installer-windows --src release-builds/Buka-win32-ia32/ --arch i386 --dest dest/installers/ --icon assets/img/icon.png",
@@ -42,8 +42,7 @@
       "packagerConfig": {
         "asar": true,
         "icon": "assets/img/icon.ico",
-        "ignore": ["release-builds", ".github", "src", "locations.json"],
-        "arch": "x64"
+        "ignore": ["release-builds", ".github", "src", "locations.json"],"
       },
       "makers": [
         {
