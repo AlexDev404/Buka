@@ -42,7 +42,7 @@
       "packagerConfig": {
         "asar": true,
         "icon": "assets/img/icon.ico",
-        "ignore": ["release-builds", ".github", "src", "locations.json"],"
+        "ignore": ["release-builds", ".github", "src", "locations.json"]
       },
       "makers": [
         {
@@ -53,9 +53,7 @@
         },
         {
           "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
+          "platforms": ["darwin"]
         },
         {
           "name": "@electron-forge/maker-deb",
@@ -105,7 +103,7 @@
     "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
     "electron": "^20.1.0",
-    "electron-rebuild": "^3.2.7"
+    "electron-rebuild": "^3.2.7",
     "electron-prebuilt-compile": "8.2.0"
   },
   "collective": {
