@@ -81,14 +81,16 @@
   },
   "homepage": "https://github.com/oguzhaninan/Buka",
   "dependencies": {
-    "@electron/remote": "^2.0.8",
+    "@electron/remote": "^2.0.1",
     "electron-squirrel-startup": "^1.0.0",
     "alertify.js": "^1.0.12",
     "electron-forge": "^5.2.4",
-    "electron-packager": "^16.0.0",
+    "electron-packager": "^15.4.0",
+    "electron-squirrel-startup": "^1.0.0",
     "nedb": "^1.8.0",
     "node-google-translate-skidz": "^1.1.2",
     "opencollective-postinstall": "^2.0.3",
+    "v8-compile-cache": "^2.3.0",
     "request": "^2.81.0",
     "vuex": "^2.3.1"
   },
@@ -102,8 +104,8 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.63",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
-    "electron": "^20.1.0",
-    "electron-rebuild": "^3.2.7",
+    "electron": "16.0.7",
+    "electron-rebuild": "^3.2.7"
     "electron-prebuilt-compile": "8.2.0"
   },
   "collective": {
